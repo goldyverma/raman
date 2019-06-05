@@ -20,7 +20,29 @@ function test(){
 }
 test();
 alert(a); //c
-          
+
+  function getFunc(){
+      var a = 7;
+      return function(b){
+          alert(a+b);
+      }
+  }
+  var f = getFunc();
+  f(5)
+
+  function orange(blueberry){
+      if(blueberry>10){
+          var a = 5;
+      }
+      else{
+          var a = 100;
+          }
+      alert(a);
+  }
+    orange(15);  
+    
+    
+    
           
           </script>
     </body>
